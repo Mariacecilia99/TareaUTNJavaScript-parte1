@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tarea unidad 3 JavaScript</h1>
+    
+    <script>
+
+        /*Ejercicio 1
+        do{
+            var opcion = parseInt(prompt('Elija los metros de distancia:'))
+        }
+        while(opcion <= 0 || isNaN(opcion))
+        
+        var mensaje;
+
+        if(opcion < 1000){
+            mensaje = 'tenes que ir a pie'
+        }
+        else if(opcion >= 1000 && opcion < 10000){
+            mensaje = 'Tenes que ir en bicicleta'
+        }else if(opcion >= 10000 && opcion < 30000){
+            mensaje = 'Tenes que ir en colectivo'
+        }else if(opcion >= 30000 && opcion < 100000){
+            mensaje = 'Tenes que ir en auto'
+        }else{
+            mensaje = 'Tenes que ir en avión'
+        }
+
+        document.write(mensaje)
+
+        /*Ejercicio 2*//*
+       var arrayNumeros = [4, 9, 50,70,90]
+
+       for(var i = 0; i < arrayNumeros.length; i++){
+           console.log('Lista del array entera: '+arrayNumeros[i])
+
+           var mayor = Math.max(...arrayNumeros)
+       }
+       console.log('El número mayor del array es: '+mayor)
+        */
+
+        /*Ejercicio 3 que el usuario agregue los números*/
+
+        var arrayUsuaurio = [70,8]
+
+        var datos = parseInt(prompt('Agregue un número'))
+
+        var agregar = arrayUsuaurio.push(datos)
+
+        console.log(arrayUsuaurio)
+
+
+        do{ 
+        var pregunta=confirm('Desea agregar más números?')
+        if(pregunta == true){ 
+            datos=parseInt(prompt('Agregue un número')) 
+            agregar = arrayUsuaurio.push(datos)
+            console.log(arrayUsuaurio)
+        }
+        }
+        while(pregunta == true)
+
+
+        var nuevoMayor = Math.max(...arrayUsuaurio)
+        console.log('El número mayor del array es: '+nuevoMayor)
+
+    </script>
+</body>
+</html>
